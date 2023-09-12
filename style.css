@@ -1,0 +1,224 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap");
+
+/* body css starts from here... */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-color: rgb(233, 229, 229); */
+  background:white
+  color: black;
+}
+/* navbar css starts from here.... */
+.background {
+  background: linear-gradient(to right, #0074e4, #ff6600); /* Gradient from blue to orange */
+  color: white; /* Change text color to white for visibility */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  height: 100px;
+}
+
+
+
+
+.navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  /* Make sure the z-index is higher than the carousel */
+  font-size: 20px;
+  font-family: "Kanit", sans-serif;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.nav-title {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  margin-bottom: 16px;
+  padding-left: 35px;
+}
+
+.nav-list {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding-left: 150px;
+}
+
+.nav-list li {
+  list-style: none;
+  padding: 20px 20px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.nav-list li a:hover {
+  text-decoration: none;
+  color: grey;
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  margin-left: 0.25rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #02a2de;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-size: medium;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* image carousel css starts from here.. */
+
+.container {
+  padding: 0%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.slider-wrapper {
+  position: relative;
+  margin: 0 auto;
+  object-fit: cover;
+  width: 100%;
+  /* Adjust the width as needed */
+  margin: 20px auto;
+  /* Center the carousel */
+  overflow: hidden;
+  /* Hide overflow for smooth appearance */
+  aspect-ratio: 16/9;
+}
+
+.slider {
+  display: flex;
+  aspect-ratio: 16/9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  /* box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25); */
+  border-radius: 0.5rem;
+  display: flex;
+  /* Display images side by side */
+  transition: transform 0.3s ease-in-out;
+  /* Add smooth sliding transition */
+}
+
+.slider img {
+  flex: 1 0 100%;
+  /* scroll-snap-align: start; */
+  width: 100%;
+  /* Make images responsive */
+  object-fit: cover;
+  /* Maintain aspect ratio and cover container */
+}
+
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #aaa;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.slider-nav a:hover {
+  opacity: 1;
+}
+
+/* sections css starts from here... */
+
+.classections {
+  padding:  20px;
+}
+
+.middle{
+  text-align: center;
+  font-weight: 600;
+}
+.KSA {
+  height: 600px;
+  width: 100%;
+  padding: 0px 50px;
+  font-family: "Kanit", sans-serif;
+}
+
+.sec-img {
+  padding: 0px 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-image: cover;
+  }
+   /* CSS for the "Click here" button */
+   .click-button {
+    background-color: #0074e4; /* Button background color (blue) */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Increase padding to make it look like a button */
+    cursor: pointer;
+    font-size: 18px; /* Font size (you can adjust as needed) */
+    transition: background-color 0.3s, color 0.3s; /* Add a transition effect */
+    text-decoration: none; /* Remove underlines from the anchor */
+    border: none; /* Remove the border from the button */
+    margin-right: 10px; /* Add a gap between the button and other content */
+  }
+
+  /* Keep the hover effect the same */
+  .click-button:hover {
+    background-color: #ff6600; /* New background color on hover (orange) */
+    color: black; /* New text color on hover (black) */
+  }
+
+  /* CSS for the footer */
+  .site-footer {
+    margin-top: 20px; /* Add a gap between the button and the footer */
+    background-color: #333; /* Footer background color */
+    color: white; /* Text color for the footer */
+    padding: 20px; /* Padding for the footer content */
+  }
+
